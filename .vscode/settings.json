@@ -1,0 +1,8 @@
+{
+    "cmake.sourceDirectory": "${workspaceFolder}/SimpleDemo_src",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.configureOnOpen": false,
+    "cmake.buildBeforeRun": true,
+    "cmake.parallelJobs": 0
+}

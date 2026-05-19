@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "-C",
+                "${workspaceFolder}/build",
+                "-j$(nproc)"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$gcc",
+            "detail": "Build the project via Make in the build directory"
+        },
+        {
+            "label": "cmake: configure",
+            "type": "shell",
+            "command": "cmake",
+            "args": [
+                "-S",
+                "${workspaceFolder}/SimpleDemo_src",
+                "-B",
+                "${workspaceFolder}/build",
+                "-G",
+                "Unix Makefiles"
+            ],
+            "problemMatcher": [],
+            "detail": "Run CMake configure (re-run if CMakeLists.txt changed)"
+        }
+    ]
+}
